@@ -16,6 +16,9 @@ export default {
     ]
   },
 
+  //Import default components when use in page/layout
+  components: true,
+
   //Plugins loaded before mounting the app
   plugins: [
     '~/plugins/api'
@@ -31,7 +34,8 @@ export default {
   //Nuxt.js modules
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/style-resources'
   ],
 
   //Axios module configuration
@@ -42,5 +46,9 @@ export default {
   //css
   css: [
     '~/assets/css/main.scss'
-  ]
+  ],
+
+  styleResources: {
+    scss: ['./assets/css/*.scss']
+  }
 }
