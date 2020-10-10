@@ -1,8 +1,6 @@
 import webpack from 'webpack'
 
 export default {
-  mode: 'universal',
-
   //Headers de la page
   head: {
     titleTemplate: 'Laurent Yen-Pon - Portfolio - %s',
@@ -32,11 +30,17 @@ export default {
 
   //Nuxt.js modules
   modules: [
+    '@nuxtjs/pwa',
     '@nuxtjs/axios'
   ],
 
   //Axios module configuration
   axios: {
     baseURL: 'http://5.51.118.35/portfolio-2020/admin/wp-json/wp/v2/'
-  }
+  },
+
+  //css
+  css: [
+    '~/assets/css/main.scss'
+  ]
 }
