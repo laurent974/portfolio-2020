@@ -23,7 +23,9 @@ export default {
       console.error(e)
     }
 
-    return {pages: pages}
+    return {
+      pages
+    }
   }
 }
 </script>
