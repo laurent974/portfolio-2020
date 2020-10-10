@@ -1,0 +1,15 @@
+//Utilities
+@import './utilities/variables';
+
+//Fonts
+@import './base/fonts/aurore';
+@import './base/fonts/open-sans';
+@import './base/fonts/titan';
+@import './base/fonts/icomoon';
+
+//base
+@import './base/reset';
+
+h1 {
+  color: blue;
+}
