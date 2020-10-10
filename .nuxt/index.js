@@ -12,6 +12,10 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_axios_e309cfe0 from 'nuxt_plugin_axios_e309cfe0' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_router_159714c2 from 'nuxt_plugin_router_159714c2' // Source: .\\router.js (mode: 'all')
+import nuxt_plugin_api_5e4622e4 from 'nuxt_plugin_api_5e4622e4' // Source: ..\\plugins\\api (mode: 'all')
+
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
 
@@ -49,7 +53,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"meta":[],"link":[],"style":[],"script":[]},
+    head: {"titleTemplate":"Laurent Yen-Pon - Portfolio - %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"http-equiv":"Cache-Control","content":"no-cache, no-store, must-revalidate"},{"http-equiv":"Pragma","content":"no-cache"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {
@@ -162,6 +166,18 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (typeof nuxt_plugin_axios_e309cfe0 === 'function') {
+    await nuxt_plugin_axios_e309cfe0(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_router_159714c2 === 'function') {
+    await nuxt_plugin_router_159714c2(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_api_5e4622e4 === 'function') {
+    await nuxt_plugin_api_5e4622e4(app.context, inject)
+  }
 
   // Lock enablePreview in context
   if (process.static && process.client) {
