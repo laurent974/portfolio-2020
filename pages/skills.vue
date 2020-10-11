@@ -7,13 +7,13 @@
 
 <script>
 export default {
-  name: 'Index',
+  name: 'Skills',
 
   async asyncData(context) {
     let page = []
 
     try {
-      const result = await context.$api.page.getPage('accueil')
+      const result = await context.$api.page.getPage('skills')
       page = result ? result[0] : []
     } catch (e) {
       console.error(e)
