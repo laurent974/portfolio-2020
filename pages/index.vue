@@ -2,6 +2,8 @@
   <div>
     <h1 class="h1">{{ page.title.rendered }}</h1>
     <div class="rte" v-html="page.content.rendered"></div>
+
+    <nuxt-link to="contact" class="button">Contactez moi!</nuxt-link>
   </div>
 </template>
 

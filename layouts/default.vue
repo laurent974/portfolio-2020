@@ -17,6 +17,7 @@ export default {
   .main {
     display: flex;
     min-height: 100vh;
+    align-items: center;
     padding-left: 80px;
     background: $soft-black;
     color: $white;

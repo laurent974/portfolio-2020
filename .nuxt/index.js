@@ -56,7 +56,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"titleTemplate":"Laurent Yen-Pon - Portfolio - %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"http-equiv":"Cache-Control","content":"no-cache, no-store, must-revalidate"},{"http-equiv":"Pragma","content":"no-cache"},{"hid":"charset","charset":"utf-8"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"apple-mobile-web-app-title","name":"apple-mobile-web-app-title","content":"my-app"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"},{"hid":"og:title","name":"og:title","property":"og:title","content":"my-app"},{"hid":"og:site_name","name":"og:site_name","property":"og:site_name","content":"my-app"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"rel":"manifest","href":"\u002F_nuxt\u002Fmanifest.872f529e.json","hid":"manifest"}],"style":[],"script":[],"title":"my-app","htmlAttrs":{"lang":"en"}},
+    head: {"titleTemplate":"Laurent Yen-Pon - Portfolio - %s","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""},{"http-equiv":"Cache-Control","content":"no-cache, no-store, must-revalidate"},{"http-equiv":"Pragma","content":"no-cache"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"}],"style":[],"script":[]},
 
     router,
     nuxt: {

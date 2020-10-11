@@ -6,3 +6,7 @@ html, body {
 body {
   font: 300 14px/1.4 'Open Sans', Helvetica, Arial, sans-serif;
 }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
