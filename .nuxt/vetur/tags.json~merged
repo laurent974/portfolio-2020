@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+{}
+=======
 {
   "Aside": {
     "description": "Auto imported from components/aside.vue"
@@ -6,3 +9,4 @@
     "description": "Auto imported from components/aside.vue"
   }
 }
+>>>>>>> develop

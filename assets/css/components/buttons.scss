@@ -1,0 +1,15 @@
+.button {
+  border: 2px solid $blue;
+  color: $blue;
+  letter-spacing: 4px;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin-top: 25px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $blue;
+    color: $soft-black;
+  }
+}

@@ -1,5 +1,33 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "D:\\\\wamp64\\\\www\\\\portfolio-2020\\\\nuxt\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_9880d6b6"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "D:\\\\wamp64\\\\www\\\\portfolio-2020\\\\nuxt\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_76ac5890"
+  },
+  {
+    "name": "skills",
+    "path": "/skills",
+    "component": "D:\\\\wamp64\\\\www\\\\portfolio-2020\\\\nuxt\\\\pages\\\\skills.vue",
+    "chunkName": "pages/skills",
+    "_name": "_5b2ad64c"
+  },
+  {
+    "name": "works",
+    "path": "/works",
+    "component": "D:\\\\wamp64\\\\www\\\\portfolio-2020\\\\nuxt\\\\pages\\\\works.vue",
+    "chunkName": "pages/works",
+    "_name": "_45a48a1a"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "D:\\\\wamp64\\\\www\\\\portfolio-2020\\\\nuxt\\\\pages\\\\index.vue",

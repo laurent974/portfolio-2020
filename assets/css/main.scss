@@ -9,7 +9,8 @@
 
 //base
 @import './base/reset';
+@import './base/base';
+@import './base/typography';
 
-h1 {
-  color: blue;
-}
+//Components
+@import './components/buttons';

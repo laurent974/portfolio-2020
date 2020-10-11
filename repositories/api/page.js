@@ -3,8 +3,8 @@ export default $axios => ({
     return $axios.$get(`/page`, { params })
   },
 
-  getPage(id, params) {
-    return $axios.$get(`/page/${id}`, { params })
+  getPage(slug, params) {
+    return $axios.$get(`/pages?slug=${slug}`, { params })
   },
 
   getListPages(params) {
